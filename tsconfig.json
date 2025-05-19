@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/components/animation.jsx", "src/components/menu.jsx", "src/components/head.jsx", "src/app/team/design-pr/page.jsx", "src/components/coordinator.jsx", "src/components/Overall.jsx", "src/components/team-button.jsx", "src/app/team/page.jsx", "src/app/team/speaker-curator/page.jsx", "src/app/team/web-development/page.jsx", "src/app/team/logistics-hospitality/page.jsx", "src/app/team/multimedia/page.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

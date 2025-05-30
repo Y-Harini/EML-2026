@@ -11,9 +11,17 @@ import './Navbar.css';
 const menuItems = [
   { icon: Home, text: "Home", href: "/" },
   { icon: Home, text: "Speakers", href: "/speakers" },
-  { icon: Home, text: "Team", href: "/team" },
+  {
+    icon: Home,
+    text: "Team",
+    subItems: [
+      { text: "Team 2024-2025", href: "/team24-25" },
+      { text: "Team 2025-2026", href: "/team25-26" },
+    ],
+  },
   { icon: Home, text: "Contact Us", href: "/contact_us" },
 ];
+
 
 const externalLinks = [
   {
@@ -71,7 +79,7 @@ function Navbar() {
           </div>
           <div className="m-4 flex">
             <ul className="flex relative">
-              {menuItems.map((item, index) => (
+              {/* {menuItems.map((item, index) => (
                 <li
                   key={item.text}
                   className="relative w-[120px]"
@@ -89,7 +97,70 @@ function Navbar() {
                     {item.text}
                   </Link>
                 </li>
-              ))}
+              ))} */}
+              {menuItems.map((item, index) => {
+              if (item.text === "Team") {
+                return (
+                  <li
+                    key={item.text}
+                    className="relative w-[120px] group"
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
+                    <span
+                      className={`font-[merriweather] hover:-translate-y-1 flex items-center justify-center h-full py-2 px-4 text-[19px] transition-all duration-300 ${
+                        activeIndex === index
+                          ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200"
+                          : "text-white"
+                      }`}
+                    >
+                      {item.text}
+                    </span>
+                    
+                    {/* Submenu */}
+                    <ul className="absolute top-full left-0 mt-2 bg-[#0C223F] text-white w-[180px] shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                      <li>
+                        <Link
+                          href="/team24-25"
+                          className="block px-4 py-2 hover:bg-yellow-500 hover:text-black transition-colors duration-200 font-[merriweather]"
+                        >
+                          Team 2024-2025
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/team25-26"
+                          className="block px-4 py-2 hover:bg-yellow-500 hover:text-black transition-colors duration-200 font-[merriweather]"
+                        >
+                          Team 2025-2026
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                );
+  }
+
+  return (
+    <li
+      key={item.text}
+      className="relative w-[120px]"
+      onMouseEnter={() => setHoveredIndex(index)}
+      onMouseLeave={() => setHoveredIndex(null)}
+    >
+      <Link
+        href={item.href}
+        className={`font-[merriweather] hover:-translate-y-1 flex items-center justify-center h-full py-2 px-4 text-[19px] transition-all duration-300 ${
+          activeIndex === index
+            ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200"
+            : "text-white"
+        }`}
+      >
+        {item.text}
+      </Link>
+    </li>
+  );
+})}
+
               {externalLinks.map((item, index) => (
                 <li
                   key={item.text}

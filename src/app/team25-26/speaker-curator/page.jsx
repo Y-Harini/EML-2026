@@ -9,13 +9,14 @@ import Navbar from "../../../components/Navbar";
 import Ss from "../ss/page"
 
 const coordinators = [
-  { imageSrc: "/images/Harshita Bansal.jpg", title: "Coordinator", name: "Harshita Bansal", rollNo: "bt24mtech11015" },
-  { imageSrc: "/images/Aastha.jpg", title: "Coordinator", name: "Aastha", rollNo: "co23btech11001" },
-  { imageSrc: "/images/Somani Ankita.jpg", title: "Coordinator", name: "Ankita Somani", rollNo: "bm23btech11022" },
-  { imageSrc: "/images/Aryan Raj.jpg", title: "Coordinator", name: "Aryan Raj", rollNo: "bt23btech11004" },
-  { imageSrc: "/images/Renuka Sonawane.jpg", title: "Coordinator", name: "Renuka Sonawane", rollNo: "mp24mscst14006" },
-  { imageSrc: "/images/Shreya Sridhar.JPG", title: "Coordinator", name: "Shreya Sridhar", rollNo: "ic22btech11015" },
-  { imageSrc: "/images/Om Ajay Godse.jpg", title: "Coordinator", name: "Om Godse", rollNo: "me23btech11045" }
+  { imageSrc: "/images/Karanam Sushan.webp", name: "Karanam Sushan"},
+  { imageSrc: "/images/Merwyn Kumar.webp", name: "Merwyn Kumar" },
+  { imageSrc: "/images/Prabhat Anand.webp", name: "Prabhat Anand"},
+  { imageSrc: "/images/Sheshadri Rathan.webp", name: "Sheshadri Rathan" },
+  { imageSrc: "/images/Yash Mohan.webp", name: "Yash Mohan" },
+  { imageSrc: "/images/Nandini Agrawal.webp", name: "Nandini Agrawal" },
+  { imageSrc: "/images/Sandip Subhrajit.webp", name: "Sandip Subhrajit" },
+  { imageSrc: "/images/Rahul purika.webp", name: "Rahul Purika" }
 ];
 
 export default function SpeakerCurator() {
@@ -47,10 +48,10 @@ export default function SpeakerCurator() {
 
               <div className="flex flex-col justify-start items-start w-full max-w-5xl gap-10 mt-[70px] ml-[350px]">
                 <Head 
-                  imageSrc="/images/Soumik Roy.jpeg" 
+                  imageSrc="/images/Kaivalya Mase.webp" 
                   title="Speaker Curator Head" 
-                  name="Soumik Roy" 
-                  rollNo="bt23mtech11010" 
+                  name="Kaivalya Mase" 
+                  rollNo="ME23BTECH11036" 
                   bgColor="bg-[#1D4F7C]"
                 />
 

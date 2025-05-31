@@ -9,10 +9,13 @@ import Navbar from "../../../components/Navbar";
 import Ss from "../ss/page"; // Importing the small-screen version
 
 const coordinators = [
-  { imageSrc: "/images/Parthib Ghosh.jpg", title: "Coordinator", name: "Parthib Ghosh", rollNo: "co22btech11007" },
-  { imageSrc: "/images/Sachin Dev.jpg", title: "Coordinator", name: "Sachin Dev", rollNo: "bt23mtech11007" },
-  { imageSrc: "/images/Kankariya Aditya Rajesh.jpg", title: "Coordinator", name: "Kankariya Aditya", rollNo: "bt23btech11011" },
-  { imageSrc: "/images/Ashuthosh Shivaraj.jpg", title: "Coordinator", name: "Ashuthosh Shivaraj", rollNo: "me23btech11011" },
+  { imageSrc: "/images/Aryan Dake.webp", name: "Aryan Dake"},
+  { imageSrc: "/images/Kripalu Vipul Sonar.webp", name: "Kripalu Vipul Sonar" },
+  { imageSrc: "/images/Shresth Kumar.webp", name: "Shresth Kumar" },
+  { imageSrc: "/images/Aila Vaishnavi.webp", name: "Aila Vaishnavi" },
+  { imageSrc: "/images/Krish.webp", name: "Krish" },
+  { imageSrc: "/images/Akshat Semwal.webp", name: "Akshat Semwal" }
+  
 ];
 
 export default function Collaborationpr() {
@@ -48,10 +51,10 @@ export default function Collaborationpr() {
               <div className="flex flex-col justify-start items-center md:items-start w-full max-w-5xl gap-10 mt-[70px] md:ml-[350px] px-4">
                 {/* Head Section */}
                 <Head
-                  imageSrc="/images/Aditya.jpg"
-                  title="DesignHead"
-                  name="Aditya Barwaye"
-                  rollNo="co22btech11002"
+                  imageSrc="/images/Aashi Ranjan.webp"
+                  title="Collaboration and PR Head"
+                  name="Aashi Ranjan"
+                  rollNo="bt23btech11001"
                   bgColor="bg-[#1D4F7C]"
                 />
 

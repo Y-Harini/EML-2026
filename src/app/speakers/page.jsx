@@ -91,7 +91,7 @@ const Speakers = () => {
             {speakers.map((speaker, index) => (
               <motion.div
                 key={speaker.id}
-                className="group perspective"
+                className="group perspective shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl"
                 onClick={() => handleSpeakerClick(index)}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ const Speakers = () => {
                 <div className="relative w-full h-[300px] transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-180">
                   
                   {/* Front Side */}
-                  <div className={`absolute w-full h-full rounded-xl overflow-hidden shadow-md backface-hidden ${colors[index % colors.length]}`}>
+                  <div className={`absolute w-full h-full rounded-xl overflow-hidden  backface-hidden bg-blue-200`}>
                     <img
                       src={speaker.photo}
                       alt={speaker.name}
@@ -112,9 +112,9 @@ const Speakers = () => {
                   </div>
 
                   {/* Back Side */}
-                  <div className="absolute w-full h-full rounded-xl overflow-hidden shadow-md bg-white p-4 text-center transform rotate-y-180 backface-hidden overflow-y-auto">
-                    <h3 className="font-bold text-[#0C223F] mb-2">{speaker.name}</h3>
-                    <p className="text-sm text-gray-600">{speaker.description || "No description available."}</p>
+                  <div className="absolute bg-[#1d4f7c] w-full h-full rounded-xl overflow-hidden shadow-md  p-4 text-center transform rotate-y-180 backface-hidden overflow-y-auto">
+                    <h3 className="font-bold text-white mb-2">{speaker.name}</h3>
+                    <p className="text-sm text-white">{speaker.description || "No description available."}</p>
                   </div>
                 </div>
               </motion.div>

@@ -15,7 +15,7 @@ export default function Contact() {
 
     if (showNotification) {
       const startTime = Date.now();
-      const duration = 4000;
+      const duration = 3000;
 
       progressInterval = setInterval(() => {
         const elapsed = Date.now() - startTime;

@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Carousel from "../components/Carousel";
 import Home4 from "../components/Home4";
 import YoutubeSection from "../components/YoutubeSection";
+import SocialMediaSection from "../components/SocialMediaSection";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -61,7 +62,7 @@ export default function Home() {
         </motion.div>
 
         <Home4 />
-        <YoutubeSection />
+        <SocialMediaSection />
       <Footer />
       </div>
     </div>

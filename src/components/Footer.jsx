@@ -4,7 +4,7 @@ import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
 
 function Footer() {
     return (
-        <div className='relative h-[22rem] md:overflow-hidden mt-[10rem]'>
+        <div className='relative h-[22rem] md:overflow-hidden mt-[15rem]'>
             <div className='mt-[10rem] bg-gray-50'></div>
 
             <div className="absolute top-[1rem] left-[50%] -translate-x-[50%] h-[10rem] hidden md:block !bg-[#7A92BF] rounded-tl-[5rem] rounded-tr-[7rem] z-[100] w-[90vw]"></div>

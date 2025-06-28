@@ -20,6 +20,7 @@ export default {
         small: "var(--text-sm)",
       },
       screens: {
+        tablet:"768px",
         laptop: "1024px",
       },
     },

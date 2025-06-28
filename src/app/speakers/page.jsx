@@ -91,7 +91,7 @@ const Speakers = () => {
         </div>
 
         {/* Grid of Speakers */}
-        <div className="w-full mt-10 px-5 laptop:px-20">
+        <div className="hidden tablet:block w-full mt-10 px-5 laptop:px-20">
           <h2 className="text-2xl font-bold mb-6 text-center text-[#0C223F]">All Speakers</h2>
           <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-5 gap-6">
             {speakers.map((speaker, index) => (

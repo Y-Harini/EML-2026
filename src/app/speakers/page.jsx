@@ -89,9 +89,32 @@ const Speakers = () => {
         >
           <SpeakerCard speaker={speakers[currentIndex]} bgIndex={bgIndex} />
         </div>
-
+        {/* Mobile Recent Speakers - Show only 5 */}
+<div className="w-full mt-8 px-4 laptop:hidden">
+  <h2 className="text-xl font-bold mb-4 text-center text-[#0C223F]">Recent Speakers</h2>
+  <div className="grid grid-cols-2 gap-4">
+    {speakers
+      .slice(Math.max(0, speakers.length - 5))
+      .map((speaker, index) => (
+        <div
+          key={speaker.id}
+          className="cursor-pointer bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden"
+          onClick={() => handleSpeakerClick(speakers.length - 5 + index)}
+        >
+          <img
+            src={speaker.photo}
+            alt={speaker.name}
+            className="w-full h-[140px] object-cover"
+          />
+          <div className="p-2 text-center">
+            <p className="text-sm font-semibold text-[#0C223F]">{speaker.name}</p>
+          </div>
+        </div>
+      ))}
+  </div>
+</div>
         {/* Grid of Speakers */}
-        <div className="hidden tablet:block w-full mt-10 px-5 laptop:px-20">
+        <div className="w-full mt-10 px-5 laptop:px-20">
           <h2 className="text-2xl font-bold mb-6 text-center text-[#0C223F]">All Speakers</h2>
           <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-5 gap-6">
             {speakers.map((speaker, index) => (
@@ -130,12 +153,12 @@ const Speakers = () => {
 
         {/* Mobile Menu */}
         <div className="laptop:hidden">
-          <button
+        { /* <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="fixed top-10 right-10 bg-[#0C223F] text-white p-2 rounded-full z-50 mt-10"
           >
             {isMobileMenuOpen ? "Close" : "Speakers Menu"}
-          </button>
+          </button> */}
           <MobileSpeakerList
             speakers={speakers}
             currentIndex={currentIndex}

@@ -26,7 +26,7 @@ const externalLinks = [
   {
     icon: Home,
     text: "Brochure",
-    href: "https://drive.google.com/file/d/15BaNpr183a3iDsV_jktonEzrGsOJ1CwH/view?usp=drivesdk",
+    href: "https://drive.google.com/file/d/1Nplh6DCMvWDwDw1cEkwHpIbn_OI8r95V/view?usp=drive_link",
   },
 ];
 
@@ -320,7 +320,7 @@ function Navbar() {
                 setIsOpen(false);
               }}
               href={
-                "https://drive.google.com/file/d/15BaNpr183a3iDsV_jktonEzrGsOJ1CwH/view?usp=drivesdk"
+                "https://drive.google.com/file/d/1Nplh6DCMvWDwDw1cEkwHpIbn_OI8r95V/view?usp=drive_link"
               }
               className={`hover:text-black/50 transform transition-all duration-500 ease-outhover:scale-95 font-semibold flex items-center text-black/80 font-[merriweather] text-[20px] ${
                 isOpen

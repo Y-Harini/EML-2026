@@ -89,17 +89,17 @@ const Speakers = () => {
         >
           <SpeakerCard speaker={speakers[currentIndex]} bgIndex={bgIndex} />
         </div>
-        {/* Mobile Recent Speakers - Show only 5 */}
+        {/* Mobile Recent Speakers - Show only 4 */}
 <div className="w-full mt-8 px-4 laptop:hidden">
   <h2 className="text-xl font-bold mb-4 text-center text-[#0C223F]">Recent Speakers</h2>
   <div className="grid grid-cols-2 gap-4">
     {speakers
-      .slice(Math.max(0, speakers.length - 5))
+      .slice(0,4)
       .map((speaker, index) => (
         <div
           key={speaker.id}
           className="cursor-pointer bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden"
-          onClick={() => handleSpeakerClick(speakers.length - 5 + index)}
+          onClick={() => handleSpeakerClick(index)}
         >
           <img
             src={speaker.photo}
@@ -114,8 +114,8 @@ const Speakers = () => {
   </div>
 </div>
         {/* Grid of Speakers */}
-        <div className="w-full mt-10 px-5 laptop:px-20">
-          <h2 className="text-2xl font-bold mb-6 text-center text-[#0C223F]">All Speakers</h2>
+        <div className="hidden laptop:block w-full mt-10 px-5 laptop:px-20">
+          <h2 className="text-2xl font-bold mb-6 text-center text-[#0C223F]" >All Speakers</h2>
           <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-5 gap-6">
             {speakers.map((speaker, index) => (
               <motion.div

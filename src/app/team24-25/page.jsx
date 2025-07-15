@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Animation from "../../components/animation";
-import Menu from "../../components/menu24-25";
-import Overall from "../../components/Overall24-25";
+import Menu from "../../components/menu";
+import Overall from "../../components/Overall";
 import Teambutton from "../../components/team-button";
 import Navbar from "../../components/Navbar";
 import Ss from "./ss/page"; 

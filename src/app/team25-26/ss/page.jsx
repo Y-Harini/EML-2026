@@ -1,6 +1,6 @@
 import Animation from "../../../components/animation";
 import Menu from "../../../components/menu25-26";
-import Overall from "../../../components/Overall24-25";
+import Overall from "../../../components/Overall25-26";
 import Teambutton from "../../../components/team-button";
 import Navbar from "../../../components/Navbar";
 import Head from "../../../components/head";
@@ -8,142 +8,204 @@ import Coordinator from "../../../components/coordinator";
 
 const coordinators = [
   {
-    imageSrc: "/images/Parthib Ghosh.jpg",
+    imageSrc: "/images/Mikkili Joseph Daniel.webp",
     title: "Coordinator",
-    name: "Parthib Ghosh",
-    rollNo: "co22btech11007",
+    name: "Mikkili Joseph Daniel",
   },
   {
-    imageSrc: "/images/Sachin Dev.jpg",
+    imageSrc: "/images/Chinthapally Purna Nanda Reddy.webp",
     title: "Coordinator",
-    name: "Sachin Dev",
-    rollNo: "bt23mtech11007",
+    name: "Purna Nanda Reddy",
   },
   {
-    imageSrc: "/images/Kankariya Aditya Rajesh.jpg",
+    imageSrc: "/images/Raunak.webp",
     title: "Coordinator",
-    name: "Kankariya Aditya",
-    rollNo: "bt23btech11011",
+    name: "Raunak Vernekar",
   },
   {
-    imageSrc: "/images/Ashuthosh Shivaraj.jpg",
+    imageSrc: "/images/no_image.webp",
     title: "Coordinator",
-    name: "Ashuthosh Shivaraj",
-    rollNo: "me23btech11011",
+    name: "Divyaanjali",
   },
   {
-    imageSrc: "/images/Harshita Bansal.jpg",
+    imageSrc: "/images/no_image.webp",
     title: "Coordinator",
-    name: "Harshita Bansal",
-    rollNo: "bt24mtech11015",
+    name: "Srijan Sharma",
   },
   {
-    imageSrc: "/images/Aastha.jpg",
+    imageSrc: "/images/Karanam Sushan.webp",
     title: "Coordinator",
-    name: "Aastha",
-    rollNo: "co23btech11001",
+    name: "Karanam Sushan",
   },
   {
-    imageSrc: "/images/Somani Ankita.jpg",
+    imageSrc: "/images/Merwyn Kumar.webp",
     title: "Coordinator",
-    name: "Ankita Somani",
-    rollNo: "bm23btech11022",
+    name: "Merwyn Kumar",
   },
   {
-    imageSrc: "/images/Aryan Raj.jpg",
+    imageSrc: "/images/Prabhat Anand.jpg",
     title: "Coordinator",
-    name: "Aryan Raj",
-    rollNo: "bt23btech11004",
+    name: "Prabhat Anand",
   },
   {
-    imageSrc: "/images/Renuka Sonawane.jpg",
+    imageSrc: "/images/Sheshadri Rathan.webp",
     title: "Coordinator",
-    name: "Renuka Sonawane",
-    rollNo: "mp24mscst14006",
+    name: "Sheshadri Rathan",
   },
   {
-    imageSrc: "/images/Shreya Sridhar.JPG",
+    imageSrc: "/images/Yash Mohan.webp",
     title: "Coordinator",
-    name: "Shreya Sridhar",
-    rollNo: "ic22btech11015",
+    name: "Yash Mohan",
   },
   {
-    imageSrc: "/images/Om Ajay Godse.jpg",
+    imageSrc: "/images/Nandini Agrawal.webp",
     title: "Coordinator",
-    name: "Om Godse",
-    rollNo: "me23btech11045",
+    name: "Nandini Agrawal",
   },
   {
-    imageSrc: "/images/Sanjay M.jpg",
+    imageSrc: "/images/Sandip Subhrajit.webp",
     title: "Coordinator",
-    name: "Sanjay M",
-    rollNo: "ic23btech11018",
+    name: "Sandip Subhrajit",
   },
   {
-    imageSrc: "/images/Kodadala Jagadeesh.png",
+    imageSrc: "/images/Rahul porika.jpg",
     title: "Coordinator",
-    name: "K Jagadeesh",
-    rollNo: "ai23btech11012",
+    name: "Rahul porika",
   },
   {
-    imageSrc: "/images/Nikita Tuwani.jpg",
+    imageSrc: "/images/Thumma Tejaswi.webp",
     title: "Coordinator",
-    name: "Nikita Tuwani",
-    rollNo: "cy24mscst11016",
+    name: "Thumma Tejaswi",
   },
   {
-    imageSrc: "/images/Akkala Sai Nihal.jpg",
+    imageSrc: "/images/Devarakonda Guna Vaishnavi.webp",
     title: "Coordinator",
-    name: "Akkala Sai Nihal",
-    rollNo: "bm24btech11003",
+    name: "Guna Vaishnavi",
   },
   {
-    imageSrc: "/images/Kotala Manisha.jpg",
+    imageSrc: "/images/Sai Kiran.webp",
     title: "Coordinator",
-    name: "Kotala Manisha",
-    rollNo: "ms23btech11013",
+    name: "Sai Kiran",
   },
   {
-    imageSrc: "/images/Sujan Rada.jpg",
+    imageSrc: "/images/Akshay Kadam.webp",
     title: "Coordinator",
-    name: "Sujan Rada",
-    rollNo: "ee23btech11219",
+    name: "Akshay Kadam",
   },
   {
-    imageSrc: "/images/Poludasu Srivastav.jpg",
+    imageSrc: "/images/Md Sameer.webp",
     title: "Coordinator",
-    name: "Poludasu Srivastav",
-    rollNo: "bt23btech11019",
+    name: "Md Sameer",
   },
   {
-    imageSrc: "/images/Kharatmol Harshitha.jpg",
+    imageSrc: "/images/Geedi Harsha Vardhan.webp",
     title: "Coordinator",
-    name: "K Harshitha",
-    rollNo: "bm23btech11011",
+    name: "Geedi Harsha Vardhan",
   },
   {
-    imageSrc: "/images/Krishna Kumar.jpg",
+    imageSrc: "/images/Ambati Siva Gouri Saranya.webp",
     title: "Coordinator",
-    name: "Krishna Kumar",
-    rollNo: "em23mtech11006",
+    name: "Siva Gouri Saranya",
   },
   {
-    imageSrc: "/images/Namagiri Tejasri.jpg",
+    imageSrc: "/images/Mokshith Kumar Reddy.webp",
     title: "Coordinator",
-    name: "Namagiri Tejasri",
-    rollNo: "ep23btech11018",
+    name: "Mokshith Kumar Reddy",
   },
   {
-    imageSrc: "/images/Bhavitha.jpeg",
+    imageSrc: "/images/Shinde Harsh Vijay.jpg",
     title: "Coordinator",
-    name: "Kakkirala Bhavitha",
-    rollNo: "co22btech11005",
+    name: "Shinde Harsh Vijay",
   },
   {
-    imageSrc: "/images/Vasana Manas.jpg",
+    imageSrc: "/images/Rishitha.webp",
     title: "Coordinator",
-    name: "Vasana Manas",
-    rollNo: "ee23btech11062",
+    name: "Rishitha Rajapu",
+  },
+  {
+    imageSrc: "/images/Harini.webp",
+    title: "Coordinator",
+    name: "Harini Yoligi",
+  },
+  {
+    imageSrc: "/images/Dinesh.webp",
+    title: "Coordinator",
+    name: "Tavva Dinesh Reddy",
+  },
+  {
+    imageSrc: "/images/Abhinav.webp",
+    title: "Coordinator",
+    name: "Abhinav Reddy",
+  },
+  {
+    imageSrc: "/images/Dhanaji.webp",
+    title: "Coordinator",
+    name: "Om Dhanaji Khot",
+  },
+  {
+    imageSrc: "/images/Anveshchandra Bavikadi.webp",
+    title: "Coordinator",
+    name: "Anveshchandra",
+  },
+  {
+    imageSrc: "/images/Araveeti Sai Tejeswar Reddy(1).jpg",
+    title: "Coordinator",
+    name: "Sai Tejeswar Reddy",
+  },
+  {
+    imageSrc: "/images/Charugundla Anju Bhargavi.webp",
+    title: "Coordinator",
+    name: "Anju Bhargavi",
+  },
+  {
+    imageSrc: "/images/Gajjarapu Satyanarayana.webp",
+    title: "Coordinator",
+    name: "Satyanarayana",
+  },
+  {
+    imageSrc: "/images/no_image.webp",
+    title: "Coordinator",
+    name: "Darshan",
+  },
+  {
+    imageSrc: "/images/no_image.webp",
+    title: "Coordinator",
+    name: "Pranathi",
+  },
+  {
+    imageSrc: "/images/Aryan Dake.webp",
+    title: "Coordinator",
+    name: "Aryan Dake",
+  },
+  {
+    imageSrc: "/images/Kripalu Vipul Sonar.webp",
+    title: "Coordinator",
+    name: "Kripalu Vipul Sonar",
+  },
+  {
+    imageSrc: "/images/Shresth Kumar.webp",
+    title: "Coordinator",
+    name: "Shresth Kumar",
+  },
+  {
+    imageSrc: "/images/Aila Vaishnavi.jpg",
+    title: "Coordinator",
+    name: "Aila Vaishnavi",
+  },
+  {
+    imageSrc: "/images/Krish.webp",
+    title: "Coordinator",
+    name: "Krish",
+  },
+  {
+    imageSrc: "/images/Akshat Semwal.webp",
+    title: "Coordinator",
+    name: "Akshat Semwal",
+  },
+  {
+    imageSrc: "/images/Shan Meshram.webp",
+    title: "Coordinator",
+    name: "Shan Meshram",
   },
 ];
 
@@ -151,7 +213,7 @@ const TeamPage = () => {
   return (
     <div className="flex flex-col gap-10 items-center">
       <Navbar />
-      <Teambutton text="Team 2024-2025" backgroundColor="bg-[#0c223f]" />
+      <Teambutton text="Team 2025-2026" backgroundColor="bg-[#0c223f]" />
       {/* <Teambutton text="Faculties" backgroundColor="bg-[#0c223f]" /> */}
       <div className="sm:w-1/4 md:w-2/3 flex flex-col justify-center items-center mb-5 mt-3 gap-10">
         <Head
@@ -179,77 +241,122 @@ const TeamPage = () => {
       <Teambutton text="Design" backgroundColor="bg-[#0c223f]" />
       <div className="flex flex-col mt-4 items-center">
         <Head
-          imageSrc="/images/Aditya.jpg"
-          title="Design and PR Head"
-          name="Aditya Barwaye"
-          rollNo="co22btech11002"
+          imageSrc="/images/Ashwath.webp"
+          title="Design Head"
+          name="Ashwath"
           bgColor="bg-[#1D4F7C]"
         />
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-7 sm:grid-cols-3 mt-7">
-          {coordinators.slice(0, 4).map((coordinator, i) => (
-            <Coordinator key={i} {...coordinator} />
-          ))}
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(0, 5).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
         </div>
       </div>
 
       <Teambutton text="Speaker Curator" backgroundColor="bg-[#0c223f]" />
       <div className="flex flex-col mt-4 items-center">
         <Head
-          imageSrc="/images/Soumik Roy.jpeg"
-          title="Speaker Curator Head"
-          name="Soumik Roy"
-          rollNo="bt23mtech11010"
+          imageSrc="/images/Kaivalya Mase.webp"
+          title="Content and Speaker Curator Head"
+          name="Kaivalya Mase"
           bgColor="bg-[#1D4F7C]"
         />
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-7 sm:grid-cols-3 mt-7">
-          {coordinators.slice(4, 11).map((coordinator, i) => (
-            <Coordinator key={i} {...coordinator} />
-          ))}
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(5, 13).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
         </div>
       </div>
 
       <Teambutton text="Logistics & Hospi" backgroundColor="bg-[#0c223f]" />
       <div className="flex flex-col mt-4 items-center">
-        <Head
-          imageSrc="/images/Jilhewar Nahoosh Manoj.jpg"
-          title="Logistics and Hospitality Head"
-          name="Jilhewar Nahoosh Manoj"
-          rollNo="ce22btech11025"
-          bgColor="bg-[#1D4F7C]"
-        />
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-7 sm:grid-cols-3 mt-7">
-          {coordinators.slice(11, 19).map((coordinator, i) => (
-            <Coordinator key={i} {...coordinator} />
-          ))}
+        <div className="space-y-12">
+          <Head
+            imageSrc="/images/Kodadala Jagadeesh.webp"
+            title="Logistics and Hospitality Head"
+            name="Kodadala Jagadeesh"
+            bgColor="bg-[#1D4F7C]"
+          />
+          <Head
+            imageSrc="/images/Akkala Sai Nihal.webp"
+            title="Logistics and Hospitality Head"
+            name="Sai Nihal"
+            bgColor="bg-[#1D4F7C]"
+          />
+        </div>
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(13, 22).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
         </div>
       </div>
 
-      <Teambutton text="Web-Development" backgroundColor="bg-[#0c223f]" />
+      <Teambutton text="Web Development" backgroundColor="bg-[#0c223f]" />
       <div className="flex flex-col mt-4 items-center">
         <Head
-          imageSrc="/images/Beaula Mahima V.jpeg"
+          imageSrc="/images/Manas - Vasana Manas.webp"
           title="Web Development Head"
-          name="Beaula Mahima V"
-          rollNo="ma21btech11002"
+          name="Manas"
           bgColor="bg-[#1D4F7C]"
         />
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-7 sm:grid-cols-3 mt-7">
-          {coordinators.slice(19, 23).map((coordinator, i) => (
-            <Coordinator key={i} {...coordinator} />
-          ))}
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(22, 27).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
         </div>
       </div>
 
       <Teambutton text="Multimedia" backgroundColor="bg-[#0c223f]" />
-      <div className="md:w-2/3 flex justify-center items-start mb-5 mt-3">
+      <div className="flex flex-col mt-4 items-center">
         <Head
-          imageSrc="/images/Rajnil Malviya.jpeg"
-          title="Multimedia Coordinator"
+          imageSrc="/images/Rajnil Malviya.webp"
+          title="Multimedia Head"
           name="Rajnil Malviya"
-          rollNo="ee23btech11051"
-          bgColor="bg-[#B0C4DE]"
-          textColor="text-[#1E456E]"
+          bgColor="bg-[#1D4F7C]"
         />
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(27, 33).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <Teambutton text="Collabration and PR" backgroundColor="bg-[#0c223f]" />
+      <div className="flex flex-col mt-4 items-center">
+        <Head
+          imageSrc="/images/Aashi Ranjan.jpg"
+          title="Collabration and PR Head"
+          name="Aashi Ranjan"
+          bgColor="bg-[#1D4F7C]"
+        />
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(33, 40).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Beautiful Team 2024-2025 Button */}
+      <div className="mt-6 mb-8 flex justify-center w-full">
+        <a
+          href="/team24-25"
+          className="relative inline-block px-8 py-4 font-semibold text-lg rounded-full bg-gradient-to-r from-blue-700 via-blue-500 to-cyan-400 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:from-cyan-400 hover:to-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        >
+          <span className="relative z-10">Team 2024-2025</span>
+          <span className="absolute inset-0 rounded-full bg-white opacity-0 transition-opacity duration-300 hover:opacity-10"></span>
+        </a>
       </div>
     </div>
   );

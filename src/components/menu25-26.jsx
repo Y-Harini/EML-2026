@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 
 const menuItems = [
-  { name: "Faculties", path: "/team25-26/faculty" },
+  { name: "Faculty", path: "/team25-26/faculty" },
   { name: "Overall Head", path: "/team25-26" },
   { name: "Design", path: "/team25-26/design" },
   { name: "Content and Speaker Curator", path: "/team25-26/speaker-curator" },
@@ -18,10 +18,11 @@ const Menu = () => {
   const router = useRouter();
 
   return (
-    <div
-      className="hidden md:flex flex-col items-center absolute top-[140px] left-[60px] 
-      w-[280px] bottom-[140px] bg-[#AB1D1E] rounded-[50px] py-6 space-y-4"
-    >
+<div
+  className="hidden md:flex flex-col items-center absolute top-[140px] left-[60px] 
+  w-[280px] min-h-[480px] bg-[#AB1D1E] rounded-[40px] py-6 px-4 space-y-4"
+>
+
       {menuItems.map(({ name, path }, index) => {
         const isActive = pathname === path;
 
@@ -29,7 +30,7 @@ const Menu = () => {
           <button
             key={index}
             onClick={() => router.push(path)}
-            className={`w-[240px] px-2 py-4 text-lg font-semibold rounded-full transition-all duration-300 
+            className={`w-[220px] py-2.5 text-lg font-semibold rounded-full transition-all duration-300 
               ${
                 isActive
                   ? "bg-[#E63946] text-white"

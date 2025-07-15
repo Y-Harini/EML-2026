@@ -5,7 +5,7 @@ import SpeakerCard from "../../components/SpeakerCard";
 import MobileSpeakerList from "../../components/MobileSpeakerList";
 import speakers from "../../../public/speakers.json";
 import Navbar from "../../components/Navbar";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import "./Speakers.css";
 
 const Speakers = () => {
@@ -13,20 +13,44 @@ const Speakers = () => {
   const [bgIndex, setBgIndex] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  
+
   const topCardRef = useRef(null); // ⭐ Ref to top SpeakerCard section
 
   const heights = [
-    "h-[100px]", "h-[80px]", "h-[60px]", "h-[90px]",
-    "h-[70px]", "h-[80px]", "h-[60px]", "h-[90px]",
-    "h-[60px]", "h-[80px]", "h-[60px]", "h-[70px]",
-    "h-[100px]", "h-[60px]", "h-[90px]", "h-[70px]",
+    "h-[100px]",
+    "h-[80px]",
+    "h-[60px]",
+    "h-[90px]",
+    "h-[70px]",
+    "h-[80px]",
+    "h-[60px]",
+    "h-[90px]",
+    "h-[60px]",
+    "h-[80px]",
+    "h-[60px]",
+    "h-[70px]",
+    "h-[100px]",
+    "h-[60px]",
+    "h-[90px]",
+    "h-[70px]",
   ];
   const colors = [
-    "bg-[#1D4F7C]", "bg-[#DBDCDE]", "bg-[#DF231D]", "bg-[#5373A6]",
-    "bg-[#E1E5E8]", "bg-[#DF231D]", "bg-[#E1E5E8]", "bg-[#5373A6]",
-    "bg-[#ACC8E2]", "bg-[#E1E5E8]", "bg-[#DF231D]", "bg-[#E1E5E8]",
-    "bg-[#1D4F7C]", "bg-[#D9D9D9]", "bg-[#DF231D]", "bg-[#1D4F7C]",
+    "bg-[#1D4F7C]",
+    "bg-[#DBDCDE]",
+    "bg-[#DF231D]",
+    "bg-[#5373A6]",
+    "bg-[#E1E5E8]",
+    "bg-[#DF231D]",
+    "bg-[#E1E5E8]",
+    "bg-[#5373A6]",
+    "bg-[#ACC8E2]",
+    "bg-[#E1E5E8]",
+    "bg-[#DF231D]",
+    "bg-[#E1E5E8]",
+    "bg-[#1D4F7C]",
+    "bg-[#D9D9D9]",
+    "bg-[#DF231D]",
+    "bg-[#1D4F7C]",
   ];
 
   useEffect(() => {
@@ -90,32 +114,36 @@ const Speakers = () => {
           <SpeakerCard speaker={speakers[currentIndex]} bgIndex={bgIndex} />
         </div>
         {/* Mobile Recent Speakers - Show only 4 */}
-<div className="w-full mt-8 px-4 laptop:hidden">
-  <h2 className="text-xl font-bold mb-4 text-center text-[#0C223F]">Recent Speakers</h2>
-  <div className="grid grid-cols-2 gap-4">
-    {speakers
-      .slice(0,4)
-      .map((speaker, index) => (
-        <div
-          key={speaker.id}
-          className="cursor-pointer bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden"
-          onClick={() => handleSpeakerClick(index)}
-        >
-          <img
-            src={speaker.photo}
-            alt={speaker.name}
-            className="w-full h-[140px] object-cover"
-          />
-          <div className="p-2 text-center">
-            <p className="text-sm font-semibold text-[#0C223F]">{speaker.name}</p>
+        <div className="w-full mt-8 px-4 laptop:hidden">
+          <h2 className="text-xl font-bold mb-4 text-center text-[#0C223F]">
+            Recent Speakers
+          </h2>
+          <div className="grid grid-cols-2 gap-4">
+            {speakers.slice(0, 4).map((speaker, index) => (
+              <div
+                key={speaker.id}
+                className="cursor-pointer bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden"
+                onClick={() => handleSpeakerClick(index)}
+              >
+                <img
+                  src={speaker.photo}
+                  alt={speaker.name}
+                  className="w-full h-[140px] object-cover"
+                />
+                <div className="p-2 text-center">
+                  <p className="text-sm font-semibold text-[#0C223F]">
+                    {speaker.name}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-  </div>
-</div>
         {/* Grid of Speakers */}
         <div className="hidden laptop:block w-full mt-10 px-5 laptop:px-20">
-          <h2 className="text-2xl font-bold mb-6 text-center text-[#0C223F]" >All Speakers</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-[#0C223F]">
+            All Speakers
+          </h2>
           <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-5 gap-6">
             {speakers.map((speaker, index) => (
               <motion.div
@@ -127,23 +155,30 @@ const Speakers = () => {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
                 <div className="relative w-full h-[300px] transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-180">
-                  
                   {/* Front Side */}
-                  <div className={`absolute w-full h-full rounded-xl overflow-hidden backface-hidden bg-blue-200`}>
+                  <div
+                    className={`absolute w-full h-full rounded-xl overflow-hidden backface-hidden bg-blue-200`}
+                  >
                     <img
                       src={speaker.photo}
                       alt={speaker.name}
                       className="w-full h-[240px] object-cover rounded-t-xl"
                     />
                     <div className="p-2 text-center">
-                      <span className="font-semibold text-sm text-[#0C223F]">{speaker.name}</span>
+                      <span className="font-semibold text-sm text-[#0C223F]">
+                        {speaker.name}
+                      </span>
                     </div>
                   </div>
 
                   {/* Back Side */}
                   <div className="absolute bg-[#1d4f7c] w-full h-full rounded-xl overflow-hidden shadow-md p-4 text-center transform rotate-y-180 backface-hidden overflow-y-auto">
-                    <h3 className="font-bold text-white mb-2">{speaker.name}</h3>
-                    <p className="text-sm text-white">{speaker.description || "No description available."}</p>
+                    <h3 className="font-bold text-white mb-2">
+                      {speaker.name}
+                    </h3>
+                    <p className="text-sm text-white">
+                      {speaker.description || "No description available."}
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -153,7 +188,7 @@ const Speakers = () => {
 
         {/* Mobile Menu */}
         <div className="laptop:hidden">
-        { /* <button
+          {/* <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="fixed top-10 right-10 bg-[#0C223F] text-white p-2 rounded-full z-50 mt-10"
           >

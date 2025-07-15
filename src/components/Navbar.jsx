@@ -3,10 +3,10 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Users, FileText,Mail } from "lucide-react";
+import { Home, Users, FileText, Mail } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie, faHeadset } from "@fortawesome/free-solid-svg-icons";
-import './Navbar.css';
+import "./Navbar.css";
 
 const menuItems = [
   { icon: Home, text: "Home", href: "/" },
@@ -21,7 +21,6 @@ const menuItems = [
   },
   { icon: Home, text: "Contact Us", href: "/contact_us" },
 ];
-
 
 const externalLinks = [
   {
@@ -38,7 +37,13 @@ function Navbar() {
   const underlineRef = useRef(null);
   const [isHover, setIsHover] = useState(false);
   const result = pathname === "/" ? "/" : pathname.match(/^\/[^/]+/)?.[0] || "";
-  const activeIndex = menuItems.findIndex((item) => item.href === result);
+  const activeIndex = menuItems.findIndex((item) => {
+    if (item.href === result) return true;
+    if (item.subItems) {
+      return item.subItems.some((sub) => pathname.startsWith(sub.href));
+    }
+    return false;
+  });
 
   useEffect(() => {
     if (underlineRef.current) {
@@ -50,11 +55,15 @@ function Navbar() {
 
   return (
     <>
-      <div className="hidden justify-center items-center md:flex z-50">
+      <div className="hidden justify-center items-center md:flex z-[9999]">
         <nav className="w-screen shadow-xl items-center justify-between h-[70px] flex bg-[#0C223F] backdrop-blur-lg z-50 transition-all duration-300 top-[60px]">
           <div className="ml-7 flex items-center">
             <Link href="/">
-              <img src="/eml1.png" className="spin-slow h-[50px] w-[50px]" alt="logo" />
+              <img
+                src="/eml1.png"
+                className="spin-slow h-[50px] w-[50px]"
+                alt="logo"
+              />
             </Link>
             {["E", "M", "L"].map((letter, i) => (
               <Link key={i} href="/">
@@ -99,15 +108,56 @@ function Navbar() {
                 </li>
               ))} */}
               {menuItems.map((item, index) => {
-              if (item.text === "Team") {
+                if (item.text === "Team") {
+                  return (
+                    <li
+                      key={item.text}
+                      className="relative w-[120px] group"
+                      onMouseEnter={() => setHoveredIndex(index)}
+                      onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                      <span
+                        className={`font-[merriweather] hover:-translate-y-1 flex items-center justify-center h-full py-2 px-4 text-[19px] transition-all duration-300 ${
+                          activeIndex === index
+                            ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200"
+                            : "text-white"
+                        }`}
+                      >
+                        {item.text}
+                      </span>
+
+                      {/* Submenu */}
+                      <ul className="absolute top-full left-0 mt-2 bg-[#0C223F] text-white w-[180px] shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[9999]">
+                        <li>
+                          <Link
+                            href="/team24-25"
+                            className="block px-4 py-2 hover:bg-yellow-500 hover:text-black transition-colors duration-200 font-[merriweather]"
+                          >
+                            Team 2024-2025
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/team25-26"
+                            className="block px-4 py-2 hover:bg-yellow-500 hover:text-black transition-colors duration-200 font-[merriweather]"
+                          >
+                            Team 2025-2026
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                  );
+                }
+
                 return (
                   <li
                     key={item.text}
-                    className="relative w-[120px] group"
+                    className="relative w-[120px]"
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
                   >
-                    <span
+                    <Link
+                      href={item.href}
                       className={`font-[merriweather] hover:-translate-y-1 flex items-center justify-center h-full py-2 px-4 text-[19px] transition-all duration-300 ${
                         activeIndex === index
                           ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200"
@@ -115,51 +165,10 @@ function Navbar() {
                       }`}
                     >
                       {item.text}
-                    </span>
-                    
-                    {/* Submenu */}
-                    <ul className="absolute top-full left-0 mt-2 bg-[#0C223F] text-white w-[180px] shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                      <li>
-                        <Link
-                          href="/team24-25"
-                          className="block px-4 py-2 hover:bg-yellow-500 hover:text-black transition-colors duration-200 font-[merriweather]"
-                        >
-                          Team 2024-2025
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/team25-26"
-                          className="block px-4 py-2 hover:bg-yellow-500 hover:text-black transition-colors duration-200 font-[merriweather]"
-                        >
-                          Team 2025-2026
-                        </Link>
-                      </li>
-                    </ul>
+                    </Link>
                   </li>
                 );
-  }
-
-  return (
-    <li
-      key={item.text}
-      className="relative w-[120px]"
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
-    >
-      <Link
-        href={item.href}
-        className={`font-[merriweather] hover:-translate-y-1 flex items-center justify-center h-full py-2 px-4 text-[19px] transition-all duration-300 ${
-          activeIndex === index
-            ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200"
-            : "text-white"
-        }`}
-      >
-        {item.text}
-      </Link>
-    </li>
-  );
-})}
+              })}
 
               {externalLinks.map((item, index) => (
                 <li
@@ -191,7 +200,6 @@ function Navbar() {
         </nav>
       </div>
 
-      
       <div className="flex justify-between items-center md:hidden h-[60px] w-screen">
         <Link href="/">
           <img
@@ -274,7 +282,7 @@ function Navbar() {
               Speakers
             </Link>
             <Link
-              href={"/team"}
+              href={"/team25-26"}
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -287,7 +295,6 @@ function Navbar() {
             >
               <span className="p-3 rounded-xl bg-black/10  mr-4 text-black">
                 <Users size={24} />
-                
               </span>
               Team
             </Link>
@@ -304,10 +311,7 @@ function Navbar() {
               style={{ transitionDelay: `${4 * 100}ms` }}
             >
               <span className="p-3 rounded-xl bg-black/10  mr-4">
-                <Mail
-                  className="text-black"
-                  size={24}
-                />
+                <Mail className="text-black" size={24} />
               </span>
               Contact Us
             </Link>

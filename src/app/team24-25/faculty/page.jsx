@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Animation from "../../../components/animation";
-import Menu from "../../../components/menu24-25";
+import Menu from "../../../components/menu";
 import Head from "../../../components/head";
 import Navbar from "../../../components/Navbar";
 import Ss from "../ss/page"; // Small-screen version

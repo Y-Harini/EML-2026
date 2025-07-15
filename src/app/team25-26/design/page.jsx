@@ -9,10 +9,31 @@ import Navbar from "../../../components/Navbar";
 import Ss from "../ss/page"; // Importing the small-screen version
 
 const coordinators = [
-  { imageSrc: "/images/Parthib Ghosh.jpg", title: "Coordinator", name: "Parthib Ghosh", rollNo: "co22btech11007" },
-  { imageSrc: "/images/Sachin Dev.jpg", title: "Coordinator", name: "Sachin Dev", rollNo: "bt23mtech11007" },
-  { imageSrc: "/images/Kankariya Aditya Rajesh.jpg", title: "Coordinator", name: "Kankariya Aditya", rollNo: "bt23btech11011" },
-  { imageSrc: "/images/Ashuthosh Shivaraj.jpg", title: "Coordinator", name: "Ashuthosh Shivaraj", rollNo: "me23btech11011" },
+  {
+    imageSrc: "/images/Mikkili Joseph Daniel.webp",
+    title: "Coordinator",
+    name: "Joseph Daniel",
+  },
+  {
+    imageSrc: "/images/Chinthapally Purna Nanda Reddy.webp",
+    title: "Coordinator",
+    name: "Purna Nanda Reddy",
+  },
+  {
+    imageSrc: "/images/Raunak.webp",
+    title: "Coordinator",
+    name: "Raunak Vernekar",
+  },
+  {
+    imageSrc: "/images/no_image.webp",
+    title: "Coordinator",
+    name: "Divyaanjali",
+  },
+  {
+    imageSrc: "/images/no_image.webp",
+    title: "Coordinator",
+    name: "Srijan Sharma",
+  },
 ];
 
 export default function Design() {
@@ -45,21 +66,27 @@ export default function Design() {
             <div className="flex flex-col md:flex-row w-full">
               <Menu />
 
-              <div className="flex flex-col justify-start items-center md:items-start w-full max-w-5xl gap-10 mt-[70px] md:ml-[350px] px-4">
+              <div className="flex flex-col justify-start items-center w-full gap-10 mt-[70px] ml-[350px]">
                 {/* Head Section */}
                 <Head
-                  imageSrc="/images/Aditya.jpg"
-                  title="DesignHead"
-                  name="Aditya Barwaye"
-                  rollNo="co22btech11002"
+                  imageSrc="/images/Ashwath.webp"
+                  title="Design Head"
+                  name="Ashwath"
                   bgColor="bg-[#1D4F7C]"
                 />
 
                 {/* Coordinators Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-                  {coordinators.map((coordinator, i) => (
-                    <Coordinator key={i} {...coordinator} />
-                  ))}
+                <div className="w-full px-4">
+                  <div className="flex flex-wrap justify-center gap-10">
+                    {coordinators.map((coordinator, i) => (
+                      <div
+                        key={i}
+                        className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]"
+                      >
+                        <Coordinator {...coordinator} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

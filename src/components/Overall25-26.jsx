@@ -10,8 +10,8 @@ const ContactCard = () => {
       {/* Profile Image */}
       <div className="w-[30%] sm:w-[25%] md:w-[30%] aspect-square rounded-full border-4 border-white overflow-hidden flex-shrink-0">
         <img
-          src="/images/Kharatmol Harshitha.webp"
-          alt="Harshitha Kharatmol"
+          src="/images/Kharatmol Harshitha.webp"  
+          alt="Pavankumar"
           className="w-full h-full object-cover object-top"
         />
       </div>
@@ -22,10 +22,10 @@ const ContactCard = () => {
             Overall Head
           </h2>
           <span className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-[lora] font-bold leading-none text-center">
-            Harshitha Kharatmol
+            Kharatmol Harshitha
           </span>
-          <span className="text-base sm:text-base md:text-lg lg:text-lg xl:text-l hover:text-gray-300 font-[lora] font-bold leading-none text-center">
-            <a href="mailto:bm23btech11011@iith.ac.in" className="">
+          <span className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-l hover:text-gray-300 font-[lora] font-bold leading-none text-center">
+            <a href="mailto:co22btech11008@iith.ac.in" className="">
               bm23btech11011@iith.ac.in
             </a>
           </span>

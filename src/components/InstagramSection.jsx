@@ -16,7 +16,7 @@ function InstagramSection() {
                     <InstaLogo className="inline-block w-7 h-7" />
                     <span className="text-pink-600"> Instagram</span>
                 </h1>
-                <p className="text-sm md:text-lg md:mt-4 text-lg italic text-gray-600 font-semibold">
+                <p className="text-sm md:text-lg md:mt-4 italic text-gray-600 font-semibold">
                     ...Where Every Frame Tells a Story 🎉
                 </p>
             </div>

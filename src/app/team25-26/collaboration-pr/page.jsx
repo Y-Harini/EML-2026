@@ -9,13 +9,13 @@ import Navbar from "../../../components/Navbar";
 import Ss from "../ss/page"; // Importing the small-screen version
 
 const coordinators = [
-  { imageSrc: "/images/Aryan Dake.webp", name: "Aryan Dake"},
-  { imageSrc: "/images/Kripalu Vipul Sonar.webp", name: "Kripalu Vipul Sonar" },
-  { imageSrc: "/images/Shresth Kumar.webp", name: "Shresth Kumar" },
-  { imageSrc: "/images/Aila Vaishnavi.webp", name: "Aila Vaishnavi" },
-  { imageSrc: "/images/Krish.webp", name: "Krish" },
-  { imageSrc: "/images/Akshat Semwal.webp", name: "Akshat Semwal" }
-  
+  { imageSrc: "/images/Aryan Dake.webp", title: "Coordinator", name: "Aryan Dake"},
+  { imageSrc: "/images/Kripalu Vipul Sonar.webp",title: "Coordinator", name: "Kripalu Vipul Sonar" },
+  { imageSrc: "/images/Shresth Kumar.webp",title: "Coordinator", name: "Shresth Kumar" },
+  { imageSrc: "/images/Aila Vaishnavi.jpg",title: "Coordinator", name: "Aila Vaishnavi" },
+  { imageSrc: "/images/Krish.webp", title: "Coordinator",name: "Krish" },
+  { imageSrc: "/images/Akshat Semwal.webp",title: "Coordinator", name: "Akshat Semwal" },
+  { imageSrc: "/images/Shan Meshram.webp", title: "Coordinator",name: "Shan Meshram " }
 ];
 
 export default function Collaborationpr() {
@@ -48,22 +48,26 @@ export default function Collaborationpr() {
             <div className="flex flex-col md:flex-row w-full">
               <Menu />
 
-              <div className="flex flex-col justify-start items-center md:items-start w-full max-w-5xl gap-10 mt-[70px] md:ml-[350px] px-4">
+              <div className="flex flex-col justify-start items-center w-full gap-10 mt-[70px] ml-[350px]">
                 {/* Head Section */}
                 <Head
                   imageSrc="/images/Aashi Ranjan.webp"
                   title="Collaboration and PR Head"
                   name="Aashi Ranjan"
-                  rollNo="bt23btech11001"
                   bgColor="bg-[#1D4F7C]"
                 />
 
                 {/* Coordinators Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-                  {coordinators.map((coordinator, i) => (
-                    <Coordinator key={i} {...coordinator} />
-                  ))}
-                </div>
+<div className="w-full px-4">
+  <div className="flex flex-wrap justify-center gap-10">
+    {coordinators.map((coordinator, i) => (
+      <div key={i} className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]">
+        <Coordinator {...coordinator} />
+      </div>
+    ))}
+  </div>
+</div>
+
               </div>
             </div>
           </div>

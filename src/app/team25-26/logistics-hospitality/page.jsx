@@ -9,14 +9,51 @@ import Navbar from "../../../components/Navbar";
 import Ss from "../ss/page";
 
 const coordinators = [
-  { imageSrc: "/images/Sanjay M.jpg", title: "Coordinator", name: "Sanjay M", rollNo: "ic23btech11018" },
-  { imageSrc: "/images/Kodadala Jagadeesh.png", title: "Coordinator", name: "Kodadala Jagadeesh", rollNo: "ai23btech11012" },
-  { imageSrc: "/images/Nikita Tuwani.jpg", title: "Coordinator", name: "Nikita Tuwani", rollNo: "cy24mscst11016" },
-  { imageSrc: "/images/Akkala Sai Nihal.jpg", title: "Coordinator", name: "Akkala Sai Nihal", rollNo: "bm24btech11003" },
-  { imageSrc: "/images/Kotala Manisha.jpg", title: "Coordinator", name: "Kotala Manisha", rollNo: "ms23btech11013" },
-  { imageSrc: "/images/Sujan Rada.jpg", title: "Coordinator", name: "Sujan Rada", rollNo: "ee23btech11219" },
-  { imageSrc: "/images/Poludasu Srivastav.jpg", title: "Coordinator", name: "Poludasu Srivastav", rollNo: "bt23btech11019" },
-  { imageSrc: "/images/Kharatmol Harshitha.jpg", title: "Coordinator", name: "Kharatmol Harshitha", rollNo: "bm23btech11011" }
+  {
+    imageSrc: "/images/Thumma Tejaswi.webp",
+    title: "Coordinator",
+    name: "Thumma Tejaswi",
+  },
+  {
+    imageSrc: "/images/Devarakonda Guna Vaishnavi.webp",
+    title: "Coordinator",
+    name: "Guna Vaishnavi",
+  },
+  {
+    imageSrc: "/images/Sai Kiran.webp",
+    title: "Coordinator",
+    name: "Sai Kiran",
+  },
+  {
+    imageSrc: "/images/Akshay Kadam.webp",
+    title: "Coordinator",
+    name: "Akshay Kadam",
+  },
+  {
+    imageSrc: "/images/Md Sameer.webp",
+    title: "Coordinator",
+    name: "Md Sameer",
+  },
+  {
+    imageSrc: "/images/Geedi Harsha Vardhan.webp",
+    title: "Coordinator",
+    name: "Geedi Harsha Vardhan",
+  },
+  {
+    imageSrc: "/images/Ambati Siva Gouri Saranya.webp",
+    title: "Coordinator",
+    name: "Gouri Saranya",
+  },
+  {
+    imageSrc: "/images/Mokshith Kumar Reddy.webp",
+    title: "Coordinator",
+    name: "Mokshith Kumar Reddy",
+  },
+  {
+    imageSrc: "/images/Shinde Harsh Vijay.jpg",
+    title: "Coordinator",
+    name: "Shinde Harsh Vijay",
+  },
 ];
 
 export default function LogisticsAndHospitality() {
@@ -37,44 +74,49 @@ export default function LogisticsAndHospitality() {
     <div className="w-full min-h-screen relative bg-white flex flex-col items-center overflow-hidden">
       {isLargeScreen ? (
         <>
-          {/* Animation (Only for Desktop) */}
+          {/* Animation*/}
           <div className="hidden md:block w-full">
             <Animation />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col relative z-10 w-full">
             <Navbar />
-            <div className="flex flex-row">
+            <div className="flex flex-row w-full">
               <Menu />
 
               {/* Head + Coordinators Section */}
-              <div className="flex flex-col justify-start items-start w-full max-w-5xl gap-10 mt-[70px] ml-[350px]">
+              <div className="flex flex-col justify-start items-center w-full gap-12 mt-[70px] ml-[350px]">
                 {/* Head Section */}
-                <Head 
-                  imageSrc="/images/Jilhewar Nahoosh Manoj.jpg" 
-                  title="Logistics and Hospitality" 
-                  name="Jilhewar Nahoosh Manoj" 
-                  rollNo="ce22btech11025" 
-                  bgColor="bg-[#1D4F7C]" 
-                />
+                <div className="flex flex-row gap-6 items-center justify-center flex-wrap">
+                  <Head
+                    imageSrc="/images/Akkala Sai Nihal.webp"
+                    title="Logistics &Hospi Head"
+                    name="Akkala Sai Nihal"
+                    bgColor="bg-[#1D4F7C]"
+                  />
+
+                  <Head
+                    imageSrc="/images/Kodadala Jagadeesh.webp"
+                    title="Logistics &Hospi Head"
+                    name="Kodadala Jagadeesh"
+                    bgColor="bg-[#1D4F7C]"
+                  />
+                </div>
 
                 {/* Coordinators Section */}
-                <div className="flex flex-col items-start -mt-2">
-                  {/* First Row */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {coordinators.slice(0, 4).map((coordinator, i) => (
-                      <Coordinator key={i} {...coordinator} />
-                    ))}
-                  </div>
-
-                  {/* Second Row (Shifted Right) */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6 items-center">
-                    {coordinators.slice(4).map((coordinator, i) => (
-                      <Coordinator key={i + 4} {...coordinator} />
+                <div className="w-full px-4">
+                  <div className="flex flex-wrap justify-center gap-6">
+                    {coordinators.map((coordinator, i) => (
+                      <div
+                        key={i}
+                        className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]"
+                      >
+                        <Coordinator {...coordinator} />
+                      </div>
                     ))}
                   </div>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </>

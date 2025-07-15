@@ -1,22 +1,22 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import Animation from "../../../components/animation";
 import Menu from "../../../components/menu25-26";
 import Head from "../../../components/head";
 import Coordinator from "../../../components/coordinator";
 import Navbar from "../../../components/Navbar";
-import Ss from "../ss/page"
+import Ss from "../ss/page";
 
 const coordinators = [
-  { imageSrc: "/images/Karanam Sushan.webp", name: "Karanam Sushan"},
-  { imageSrc: "/images/Merwyn Kumar.webp", name: "Merwyn Kumar" },
-  { imageSrc: "/images/Prabhat Anand.webp", name: "Prabhat Anand"},
-  { imageSrc: "/images/Sheshadri Rathan.webp", name: "Sheshadri Rathan" },
-  { imageSrc: "/images/Yash Mohan.webp", name: "Yash Mohan" },
-  { imageSrc: "/images/Nandini Agrawal.webp", name: "Nandini Agrawal" },
-  { imageSrc: "/images/Sandip Subhrajit.webp", name: "Sandip Subhrajit" },
-  { imageSrc: "/images/Rahul purika.webp", name: "Rahul Purika" }
+  { imageSrc: "/images/Karanam Sushan.webp",title: "Coordinator",name: "Karanam Sushan" },
+  { imageSrc: "/images/Merwyn Kumar.webp",title: "Coordinator",name: "Merwyn Kumar" },
+  { imageSrc: "/images/Prabhat Anand.jpg",title: "Coordinator",name: "Prabhat Anand" },
+  { imageSrc: "/images/Sheshadri Rathan.webp",title: "Coordinator",name: "Sheshadri Rathan" },
+  { imageSrc: "/images/Yash Mohan.webp",title: "Coordinator",name: "Yash Mohan" },
+  { imageSrc: "/images/Nandini Agrawal.webp",title: "Coordinator",name: "Nandini Agrawal" },
+  { imageSrc: "/images/Sandip Subhrajit.webp",title: "Coordinator",name: "Sandip Subhrajit" },
+  { imageSrc: "/images/Rahul porika.jpg",title: "Coordinator",name: "Rahul Porika" },
 ];
 
 export default function SpeakerCurator() {
@@ -28,9 +28,9 @@ export default function SpeakerCurator() {
     };
 
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
@@ -46,29 +46,28 @@ export default function SpeakerCurator() {
             <div className="flex flex-row">
               <Menu />
 
-              <div className="flex flex-col justify-start items-start w-full max-w-5xl gap-10 mt-[70px] ml-[350px]">
-                <Head 
-                  imageSrc="/images/Kaivalya Mase.webp" 
-                  title="Speaker Curator Head" 
-                  name="Kaivalya Mase" 
-                  rollNo="ME23BTECH11036" 
+              <div className="flex flex-col justify-start items-center w-full gap-10 mt-[70px] ml-[350px]">
+                <Head
+                  imageSrc="/images/Kaivalya Mase.webp"
+                  title="Speaker Curator Head"
+                  name="Kaivalya Mase"
                   bgColor="bg-[#1D4F7C]"
                 />
 
-                <div className="flex flex-col mt-[-2px]">
-                  <div className="grid grid-cols-4 gap-4">
-                    {coordinators.slice(0, 4).map((coordinator, i) => (
-                      <Coordinator key={i} {...coordinator} />
-                    ))}
-                  </div>
-
-                  <div className="grid grid-cols-4 gap-4 mt-5">
-                    {coordinators.slice(4).map((coordinator, i) => (
-                      <Coordinator key={i + 4} {...coordinator} />
+                {/* Coordinators Section */}
+                <div className="w-full px-4">
+                  <div className="flex flex-wrap justify-center gap-10">
+                    {coordinators.map((coordinator, i) => (
+                      <div
+                        key={i}
+                        className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]"
+                      >
+                        <Coordinator {...coordinator} />
+                      </div>
                     ))}
                   </div>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </>

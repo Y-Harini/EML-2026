@@ -1,7 +1,7 @@
 "use client"; // Needed for client-side rendering
 
 import { useState, useEffect } from "react";
-import Menu from "../../../components/menu24-25";
+import Menu from "../../../components/menu";
 import Head from "../../../components/head";
 import Coordinator from "../../../components/coordinator";
 import Animation from "../../../components/animation";

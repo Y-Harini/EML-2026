@@ -96,7 +96,7 @@ export default function LogisticsAndHospitality() {
                   />
 
                   <Head
-                    imageSrc="/images/Kodadala Jagadeesh.webp"
+                    imageSrc="/images/Jagadeesh.webp"
                     title="Logistics &Hospi Head"
                     name="Kodadala Jagadeesh"
                     bgColor="bg-[#1D4F7C]"

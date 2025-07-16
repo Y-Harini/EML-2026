@@ -16,7 +16,7 @@ const coordinators = [
   { imageSrc: "/images/Yash Mohan.webp",title: "Coordinator",name: "Yash Mohan" },
   { imageSrc: "/images/Nandini Agrawal.webp",title: "Coordinator",name: "Nandini Agrawal" },
   { imageSrc: "/images/Sandip Subhrajit.webp",title: "Coordinator",name: "Sandip Subhrajit" },
-  { imageSrc: "/images/Rahul porika.jpg",title: "Coordinator",name: "Rahul Porika" },
+  { imageSrc: "/images/Rahul Porika.jpg",title: "Coordinator",name: "Rahul Porika" },
 ];
 
 export default function SpeakerCurator() {

@@ -68,7 +68,7 @@ const coordinators = [
     name: "Sandip Subhrajit",
   },
   {
-    imageSrc: "/images/Rahul porika.jpg",
+    imageSrc: "/images/Rahul Porika.jpg",
     title: "Coordinator",
     name: "Rahul porika",
   },

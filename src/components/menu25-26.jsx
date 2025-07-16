@@ -5,12 +5,12 @@ import { usePathname, useRouter } from "next/navigation";
 const menuItems = [
   { name: "Faculty", path: "/team25-26/faculty" },
   { name: "Overall Head", path: "/team25-26" },
-  { name: "Design", path: "/team25-26/design" },
   { name: "Content and Speaker Curator", path: "/team25-26/speaker-curator" },
+  {name: "Collaboration and PR", path: "/team25-26/collaboration-pr" },
   { name: "Logistics and Hospitality", path: "/team25-26/logistics-hospitality" },
+  { name: "Design", path: "/team25-26/design" },
   { name: "Web Development", path: "/team25-26/web-development" },
   { name: "Multimedia", path: "/team25-26/multimedia" },
-  {name: "Collaboration and PR", path: "/team25-26/collaboration-pr" },
 ];
 
 const Menu = () => {

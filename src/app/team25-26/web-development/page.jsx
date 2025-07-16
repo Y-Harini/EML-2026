@@ -15,7 +15,7 @@ const coordinators = [
     name: "Rishitha Rajapu",
   },
   {
-    imageSrc: "/images/Harini.webp",
+    imageSrc: "/images/Yoligi Harini.webp",
     title: "Coordinator",
     name: "Harini Yoligi",
   },

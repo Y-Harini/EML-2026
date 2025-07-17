@@ -22,16 +22,16 @@ const coordinators = [
     title: "Coordinator",
     name: "Raunak Vernekar",
   },
-  {
-    imageSrc: "/images/no_image.webp",
-    title: "Coordinator",
-    name: "Divyaanjali",
-  },
-  {
-    imageSrc: "/images/no_image.webp",
-    title: "Coordinator",
-    name: "Srijan Sharma",
-  },
+  // {
+  //   imageSrc: "/images/no_image.webp",
+  //   title: "Coordinator",
+  //   name: "Divyaanjali",
+  // },
+  // {
+  //   imageSrc: "/images/no_image.webp",
+  //   title: "Coordinator",
+  //   name: "Srijan Sharma",
+  // },
   {
     imageSrc: "/images/Karanam Sushan.webp",
     title: "Coordinator",
@@ -123,7 +123,7 @@ const coordinators = [
     name: "Rishitha Rajapu",
   },
   {
-    imageSrc: "/images/Harini.webp",
+    imageSrc: "/images/Yoligi Harini.webp",
     title: "Coordinator",
     name: "Harini Yoligi",
   },
@@ -162,13 +162,13 @@ const coordinators = [
     title: "Coordinator",
     name: "Satyanarayana",
   },
+  // {
+  //   imageSrc: "/images/no_image.webp",
+  //   title: "Coordinator",
+  //   name: "Darshan",
+  // },
   {
-    imageSrc: "/images/no_image.webp",
-    title: "Coordinator",
-    name: "Darshan",
-  },
-  {
-    imageSrc: "/images/no_image.webp",
+    imageSrc: "/images/Pranathi.webp",
     title: "Coordinator",
     name: "Pranathi",
   },
@@ -258,7 +258,7 @@ const TeamPage = () => {
       <Teambutton text="Speaker Curator" backgroundColor="bg-[#0c223f]" />
       <div className="flex flex-col mt-4 items-center">
         <Head
-          imageSrc="/images/Kaivalya Mase.webp"
+          imageSrc="/images/Kaivalya.webp"
           title="Content and Speaker Curator Head"
           name="Kaivalya Mase"
           bgColor="bg-[#1D4F7C]"
@@ -276,7 +276,7 @@ const TeamPage = () => {
       <div className="flex flex-col mt-4 items-center">
         <div className="space-y-12">
           <Head
-            imageSrc="/images/Kodadala Jagadeesh.webp"
+            imageSrc="/images/Jagadeesh.webp"
             title="Logistics and Hospitality Head"
             name="Kodadala Jagadeesh"
             bgColor="bg-[#1D4F7C]"

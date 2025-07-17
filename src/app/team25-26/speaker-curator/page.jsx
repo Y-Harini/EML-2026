@@ -48,7 +48,7 @@ export default function SpeakerCurator() {
 
               <div className="flex flex-col justify-start items-center w-full gap-10 mt-[70px] ml-[350px]">
                 <Head
-                  imageSrc="/images/Kaivalya Mase.webp"
+                  imageSrc="/images/Mase.webp"
                   title="Speaker Curator Head"
                   name="Kaivalya Mase"
                   bgColor="bg-[#1D4F7C]"

@@ -22,16 +22,16 @@ const coordinators = [
     title: "Coordinator",
     name: "Raunak Vernekar",
   },
-  {
-    imageSrc: "/images/no_image.webp",
-    title: "Coordinator",
-    name: "Divyaanjali",
-  },
-  {
-    imageSrc: "/images/no_image.webp",
-    title: "Coordinator",
-    name: "Srijan Sharma",
-  },
+  // {
+  //   imageSrc: "/images/no_image.webp",
+  //   title: "Coordinator",
+  //   name: "Divyaanjali",
+  // },
+  // {
+  //   imageSrc: "/images/no_image.webp",
+  //   title: "Coordinator",
+  //   name: "Srijan Sharma",
+  // },
   {
     imageSrc: "/images/Karanam Sushan.webp",
     title: "Coordinator",
@@ -162,11 +162,11 @@ const coordinators = [
     title: "Coordinator",
     name: "Satyanarayana",
   },
-  {
-    imageSrc: "/images/no_image.webp",
-    title: "Coordinator",
-    name: "Darshan",
-  },
+  // {
+  //   imageSrc: "/images/no_image.webp",
+  //   title: "Coordinator",
+  //   name: "Darshan",
+  // },
   {
     imageSrc: "/images/Pranathi.webp",
     title: "Coordinator",

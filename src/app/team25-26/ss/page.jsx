@@ -22,16 +22,16 @@ const coordinators = [
     title: "Coordinator",
     name: "Raunak Vernekar",
   },
-  // {
-  //   imageSrc: "/images/no_image.webp",
-  //   title: "Coordinator",
-  //   name: "Divyaanjali",
-  // },
-  // {
-  //   imageSrc: "/images/no_image.webp",
-  //   title: "Coordinator",
-  //   name: "Srijan Sharma",
-  // },
+  {
+    imageSrc: "/images/Divyaanjali.webp",
+    title: "Coordinator",
+    name: "Divyaanjali",
+  },
+  {
+    imageSrc: "/images/Srijan Sharma.webp",
+    title: "Coordinator",
+    name: "Srijan Sharma",
+  },
   {
     imageSrc: "/images/Karanam Sushan.webp",
     title: "Coordinator",
@@ -168,7 +168,7 @@ const coordinators = [
   //   name: "Darshan",
   // },
   {
-    imageSrc: "/images/Pranathi.webp",
+    imageSrc: "/images/pranathi.webp",
     title: "Coordinator",
     name: "Pranathi",
   },
@@ -206,6 +206,11 @@ const coordinators = [
     imageSrc: "/images/Shan Meshram.webp",
     title: "Coordinator",
     name: "Shan Meshram",
+  },
+  {
+    imageSrc: "/images/Saipoorna.webp",
+    title: "Coordinator",
+    name: "Saipoorna",
   },
 ];
 
@@ -324,7 +329,7 @@ const TeamPage = () => {
         />
         <div className="w-full px-4 mt-10">
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
-            {coordinators.slice(27, 33).map((coordinator, i) => (
+            {coordinators.slice(27, 32).map((coordinator, i) => (
               <Coordinator key={i} {...coordinator} />
             ))}
           </div>
@@ -341,7 +346,7 @@ const TeamPage = () => {
         />
         <div className="w-full px-4 mt-10">
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
-            {coordinators.slice(33, 40).map((coordinator, i) => (
+            {coordinators.slice(32, 40).map((coordinator, i) => (
               <Coordinator key={i} {...coordinator} />
             ))}
           </div>

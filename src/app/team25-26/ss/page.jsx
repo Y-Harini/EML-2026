@@ -28,7 +28,7 @@ const coordinators = [
     name: "Divyaanjali",
   },
   {
-    imageSrc: "/images/Srijan Sharma.webp",
+    imageSrc: "/images/Srijan Sharma.jpg",
     title: "Coordinator",
     name: "Srijan Sharma",
   },
@@ -162,11 +162,6 @@ const coordinators = [
     title: "Coordinator",
     name: "Satyanarayana",
   },
-  // {
-  //   imageSrc: "/images/no_image.webp",
-  //   title: "Coordinator",
-  //   name: "Darshan",
-  // },
   {
     imageSrc: "/images/pranathi.webp",
     title: "Coordinator",
@@ -243,23 +238,6 @@ const TeamPage = () => {
 
       <Overall />
 
-      <Teambutton text="Design" backgroundColor="bg-[#0c223f]" />
-      <div className="flex flex-col mt-4 items-center">
-        <Head
-          imageSrc="/images/Ashwath.webp"
-          title="Design Head"
-          name="Ashwath"
-          bgColor="bg-[#1D4F7C]"
-        />
-        <div className="w-full px-4 mt-10">
-          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
-            {coordinators.slice(0, 5).map((coordinator, i) => (
-              <Coordinator key={i} {...coordinator} />
-            ))}
-          </div>
-        </div>
-      </div>
-
       <Teambutton text="Speaker Curator" backgroundColor="bg-[#0c223f]" />
       <div className="flex flex-col mt-4 items-center">
         <Head
@@ -271,6 +249,23 @@ const TeamPage = () => {
         <div className="w-full px-4 mt-10">
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
             {coordinators.slice(5, 13).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <Teambutton text="Collabration and PR" backgroundColor="bg-[#0c223f]" />
+      <div className="flex flex-col mt-4 items-center">
+        <Head
+          imageSrc="/images/Aashi Ranjan.jpg"
+          title="Collabration and PR Head"
+          name="Aashi Ranjan"
+          bgColor="bg-[#1D4F7C]"
+        />
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(32, 40).map((coordinator, i) => (
               <Coordinator key={i} {...coordinator} />
             ))}
           </div>
@@ -296,6 +291,23 @@ const TeamPage = () => {
         <div className="w-full px-4 mt-10">
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
             {coordinators.slice(13, 22).map((coordinator, i) => (
+              <Coordinator key={i} {...coordinator} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <Teambutton text="Design" backgroundColor="bg-[#0c223f]" />
+      <div className="flex flex-col mt-4 items-center">
+        <Head
+          imageSrc="/images/Ashwath.webp"
+          title="Design Head"
+          name="Ashwath"
+          bgColor="bg-[#1D4F7C]"
+        />
+        <div className="w-full px-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+            {coordinators.slice(0, 5).map((coordinator, i) => (
               <Coordinator key={i} {...coordinator} />
             ))}
           </div>
@@ -330,23 +342,6 @@ const TeamPage = () => {
         <div className="w-full px-4 mt-10">
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
             {coordinators.slice(27, 32).map((coordinator, i) => (
-              <Coordinator key={i} {...coordinator} />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <Teambutton text="Collabration and PR" backgroundColor="bg-[#0c223f]" />
-      <div className="flex flex-col mt-4 items-center">
-        <Head
-          imageSrc="/images/Aashi Ranjan.jpg"
-          title="Collabration and PR Head"
-          name="Aashi Ranjan"
-          bgColor="bg-[#1D4F7C]"
-        />
-        <div className="w-full px-4 mt-10">
-          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
-            {coordinators.slice(32, 40).map((coordinator, i) => (
               <Coordinator key={i} {...coordinator} />
             ))}
           </div>

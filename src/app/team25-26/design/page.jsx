@@ -30,7 +30,7 @@ const coordinators = [
     name: "Divyaanjali",
   },
   {
-    imageSrc: "/images/Srijan Sharma.webp",
+    imageSrc: "/images/Srijan Sharma.jpg",
     title: "Coordinator",
     name: "Srijan Sharma",
   },

@@ -15,7 +15,8 @@ const coordinators = [
   { imageSrc: "/images/Aila Vaishnavi.jpg",title: "Coordinator", name: "Aila Vaishnavi" },
   { imageSrc: "/images/Krish.webp", title: "Coordinator",name: "Krish" },
   { imageSrc: "/images/Akshat Semwal.webp",title: "Coordinator", name: "Akshat Semwal" },
-  { imageSrc: "/images/Shan Meshram.webp", title: "Coordinator",name: "Shan Meshram " }
+  { imageSrc: "/images/Shan Meshram.webp", title: "Coordinator",name: "Shan Meshram " },
+  { imageSrc: "/images/Saipoorna.webp", title: "Coordinator",name: "Saipoorna" }
 ];
 
 export default function Collaborationpr() {

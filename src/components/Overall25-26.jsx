@@ -25,7 +25,7 @@ const ContactCard = () => {
             Kharatmol Harshitha
           </span>
           <span className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-l hover:text-gray-300 font-[lora] font-bold leading-none text-center">
-            <a href="mailto:co22btech11008@iith.ac.in" className="">
+            <a href="mailto:eml@iith.ac.in" className="">
               eml@iith.ac.in
             </a>
           </span>
